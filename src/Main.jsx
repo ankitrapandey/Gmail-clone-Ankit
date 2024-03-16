@@ -10,14 +10,14 @@ const Main=()=>{
     return (
 
         <div class="body-wrapper">
-            {/* <Leftside />
+           {/* <Leftside />
             <Header />
             <Routes>
          <Route path='/mail' element={<Mail/>}/> 
          <Route path='/Started' element={<Started/>}/>   
           </Routes>
             <RightsideBar /> */}
-            <Auth/>
+         <Auth/> 
         </div>
     )
 };
