@@ -3,7 +3,7 @@ import React from 'react'
 const Sent = () => {
   return (
     <div>
-      hello man
+      <h1>hello hii ankit</h1>
     </div>
   )
 }
