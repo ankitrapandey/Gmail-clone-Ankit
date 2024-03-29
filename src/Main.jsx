@@ -2,28 +2,26 @@
 import Header from "./Header";
 import Leftside from "./Leftside";
 import RightsideBar from "./RightsideBar";
-import { Routes,Route } from "react-router-dom";
-// import Started from "./Started";
+import { Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Body from "./Body";
+import Replica from "./Replica";
 
-// import Auth from "./Auth";
-const Main=()=>{
+const Main = () => {
     return (
-
         <div class="body-wrapper">
-           <Leftside />
+            <Leftside />
             <Header />
             <Routes>
-         {/* <Route path='/Body' element={<Body/>}/>  */}
-         <Route path='/' element={<Body params=""/>}/> 
-         <Route path='/Inbox' element={<Body params="Inbox"/>}/> 
-         <Route path='/Sent' element={<Body params="Sent"/>}/> 
-         {/* <Route path='/Started' element={<Started/>}/>    */}
-          </Routes>
+                <Route path='/' element={<Body params="" />} />
+                <Route path='/Inbox' element={<Body params="Inbox" />} />
+                <Route path='/Sent' element={<Body params="Sent" />} />
+                <Route path='/Draft' element={<Body params="Draft" />} />
+            </Routes>
             <RightsideBar />
-            <Footer/>
-         {/* <Auth/>  */}
+            <Footer />
+            <Replica/>
+
         </div>
     )
 };

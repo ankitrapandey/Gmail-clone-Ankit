@@ -12,13 +12,6 @@ const Login = () => {
     window.location.href = AUTH_URL;
   };
 
-  const getAccessToken = () => {
-   
-
-  };
-
-  
-  
   return (
     <div>
       {accesstoken ? (

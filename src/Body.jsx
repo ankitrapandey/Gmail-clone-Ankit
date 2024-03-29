@@ -9,6 +9,8 @@ import arrowdown from './icons/arrow_drop_down_black_24dp.svg'
 import Login from './Login'
 import Inbox from './Inbox'
 import Sent from './Sent'
+import Demo from './Demo'
+import Draft from './Draft'
 
 const Body = ({ params }) => {
   console.log(params);
@@ -21,6 +23,9 @@ const Body = ({ params }) => {
       case 'Sent':
         data = <Sent />
         break;
+        case 'Draft':
+          data = <Draft />
+          break;
       default:
         data = <Login />
         break;

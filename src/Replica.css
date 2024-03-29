@@ -1,0 +1,81 @@
+.container {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.first-container {
+    height: auto;
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.first-ul {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.second-ul {
+    height: auto;
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 10px solid yellow; */
+}
+
+.second-container {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.second-container h1 {
+    font-size: 1.5rem;
+    font-weight: 650;
+}
+
+.third-ul {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-container {
+    /* height: 3rem; */
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+.third-container h1{
+    font-size: 1.2rem;
+}
+
+.forth-ul{
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.forth-container{
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid red; */
+    background-color: rgb(237, 235, 234);
+
+}
