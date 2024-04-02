@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Body from "./Body";
 import Replica from "./Replica";
+import Demo from "./Demo";
 
 const Main = () => {
     return (
@@ -20,7 +21,8 @@ const Main = () => {
             </Routes>
             <RightsideBar />
             <Footer />
-            <Replica/>
+            {/* <Replica/> */}
+            <Demo/>
 
         </div>
     )
