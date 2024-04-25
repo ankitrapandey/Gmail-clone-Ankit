@@ -5,8 +5,7 @@ import RightsideBar from "./RightsideBar";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Body from "./Body";
-import Replica from "./Replica";
-import Demo from "./Demo";
+// import Replica from "./Replica";
 
 const Main = () => {
     return (
@@ -22,7 +21,6 @@ const Main = () => {
             <RightsideBar />
             <Footer />
             {/* <Replica/> */}
-            <Demo/>
 
         </div>
     )

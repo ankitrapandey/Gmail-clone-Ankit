@@ -18,6 +18,30 @@ const Inbox = () => {
     const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
     return `${formattedHours}:${formattedMinutes} ${meridiem}`;
   }
+  const deleteMail = async (messageId) => {
+    try {
+      let token = localStorage.getItem("Token");
+      console.log(token)
+      const response = await fetch(`https://gmail.googleapis.com/gmail/v1/users/me/messages/${messageId}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            }
+        });
+        if (response.ok) {
+            console.log("Email deleted successfully");
+            // Update your application state or perform any other action after successful deletion
+        } else {
+            console.error("Failed to delete email:", response);
+            // Handle the error appropriately
+        }
+    } catch (error) {
+        console.error("Error deleting email:", error);
+        // Handle any network errors or other exceptions
+    }
+};
+
 
   return (
     <div>
@@ -61,6 +85,7 @@ const Inbox = () => {
               <button className="btn">
                 <img src={archive} alt="Archive" className="btn-icon-sm btn-icon-alt btn-icon-hover" />
               </button>
+              <button class="btn" onClick={()=>deleteMail(value.id)}></button>
               <button className="btn">
                 <img src={delet} alt="Delete" className="btn-icon-sm btn-icon-alt btn-icon-hover" />
               </button>
